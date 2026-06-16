@@ -1,6 +1,6 @@
 package localization
 
-import "github.com/kercre123/wire-pod/chipper/pkg/vars"
+import "cavalier/pkg/vars"
 
 var ValidVoskModels []string = []string{"en-US", "it-IT", "es-ES", "fr-FR", "de-DE", "pt-BR", "pl-PL", "zh-CN", "tr-TR", "ru-RU", "nt-NL", "uk-UA", "vi-VN", "ko-KR"}
 
@@ -18,6 +18,8 @@ const STR_EYE_COLOR_TEAL = "str_eye_color_teal"
 const STR_EYE_COLOR_TEAL2 = "str_eye_color_teal2"
 const STR_EYE_COLOR_GREEN = "str_eye_color_green"
 const STR_EYE_COLOR_ORANGE = "str_eye_color_orange"
+const STR_EYE_COLOR_RAINBOW = "str_eye_color_rainbow"
+const STR_EYE_COLOR_REBUILD = "str_eye_color_rebuild"
 const STR_ME = "str_me"
 const STR_SELF = "str_self"
 const STR_VOLUME_LOW = "str_volume_low"
@@ -163,6 +165,8 @@ var texts = map[string][]string{
 	STR_EYE_COLOR_TEAL2:                {"tell", "acquamarina", "aguamarina", "acquamarine", "acquamarina", "akwamaryn", "蓝绿", "turkuaz", "аквамарин", "vertellen", "аквамариновий", "màu xanh ngọc", "아쿠아마린색"},
 	STR_EYE_COLOR_GREEN:                {"green", "verde", "verde", "vert", "grün", "zielony", "绿色", "yeşil", "зелёный", "groente", "зелений", "màu xanh lá", "초록색"},
 	STR_EYE_COLOR_ORANGE:               {"orange", "arancio", "naranja", "orange", "orange", "pomarańczowy", "橙色", "turuncu", "оранжевый", "oranje", "оранжевий", "màu cam", "주황색"},
+	STR_EYE_COLOR_RAINBOW:              {"rainbow", "arcobaleno", "arcoíris", "arc-en-ciel", "Regenbogen", "tęcza", "彩虹", "gökkuşağı", "радуга", "rainbow", "rainbow", "rainbow", "rainbow"},
+	STR_EYE_COLOR_REBUILD:              {"cross media bar", "cross media bar", "cross media bar", "cross media bar", "cross media bar", "cross media bar", "cross media bar", "cross media bar", "cross media bar", "cross media bar", "cross media bar", "cross media bar", "cross media bar"},
 	STR_ME:                             {"me", "me", "me", "moi", "mir", "mnie", "我", "ben", "меня", "mij", "мене", "tôi", "나", "내"},
 	STR_SELF:                           {"self", "mi", "mía", "moi", "mein", "ja", "自己", "kendim", "себя", "zelf", "себе", "bản thân", "본인", "자신"},
 	STR_VOLUME_LOW:                     {"low", "minimo", "bajo", "bas", "niedrig", "niski", "低", "düşük", "низкий", "laag", "на мінімум", "thấp", "아주 작게"},
@@ -183,40 +187,40 @@ var texts = map[string][]string{
 	STR_NAME_IS2:                       {"'s", "sono ", "soy ", "suis ", "bin ", " się ", "的", "'nin", "", "", "", "của", "의 "},
 	STR_NAME_IS3:                       {"names", " chiamo ", " llamo ", "appelle ", "werde", "imię", "名字", "adlar", "имена", "namen", "імена", "tên", "이름은"},
 	STR_FOR:                            {" for ", " per ", " para ", " pour ", " für ", " dla ", "给", " için ", "для", " voor ", " для ", " cho ", " 위해 "},
-	STR_ZERO:							{"zero","zero","zero","zéro","zero","zero","zero","zero","zero","zero","zero","zero","영"},
-	STR_ONE:							{"one","uno","one","un","one","one","one","one","one","one","one","one","일"},
-	STR_TWO:							{"two","due","two","deux","two","two","two","two","two","two","two","two","이"},
-	STR_THREE:							{"three","tre","three","trois","three","three","three","three","three","three","three","three","삼"},
-	STR_FOUR:							{"four","quattro","four","quatre","four","four","four","four","four","four","four","four","사"},
-	STR_FIVE:							{"five","cinque","five","cinq","five","five","five","five","five","five","five","five","오"},
-	STR_SIX:							{"six","sei","six","six","six","six","six","six","six","six","six","six","육"},
-	STR_SEVEN:							{"seven","sette","seven","sept","seven","seven","seven","seven","seven","seven","seven","seven","칠"},
-	STR_EIGHT:							{"eight","otto","eight","huit","eight","eight","eight","eight","eight","eight","eight","eight","팔"},
-	STR_NINE:							{"nine","nove","nine","neuf","nine","nine","nine","nine","nine","nine","nine","nine","구"},
-	STR_TEN:							{"ten","dieci","ten","dix","ten","ten","ten","ten","ten","ten","ten","ten","십"},
-	STR_ELEVEN:							{"eleven","undici","eleven","onze","eleven","eleven","eleven","eleven","eleven","eleven","eleven","eleven","십일"},
-	STR_TWELVE:							{"twelve","dodici","twelve","douze","twelve","twelve","twelve","twelve","twelve","twelve","twelve","twelve","십이"},
-	STR_THIRTEEN:						{"thirteen","tredici","thirteen","treize","thirteen","thirteen","thirteen","thirteen","thirteen","thirteen","thirteen","thirteen","십삼"},
-	STR_FOURTEEN:						{"fourteen","quattordici","fourteen","quatorze","fourteen","fourteen","fourteen","fourteen","fourteen","fourteen","fourteen","fourteen","십사"},
-	STR_FIFTEEN:						{"fifteen","quindici","fifteen","quinze","fifteen","fifteen","fifteen","fifteen","fifteen","fifteen","fifteen","fifteen","십오"},
-	STR_SIXTEEN:						{"sixteen","sedici","sixteen","seize","sixteen","sixteen","sixteen","sixteen","sixteen","sixteen","sixteen","sixteen","십육"},
-	STR_SEVENTEEN:						{"seventeen","diciassette","seventeen","dix-sept","seventeen","seventeen","seventeen","seventeen","seventeen","seventeen","seventeen","seventeen","십칠"},
-	STR_EIGHTEEN:						{"eighteen","diciotto","eighteen","dix-huit","eighteen","eighteen","eighteen","eighteen","eighteen","eighteen","eighteen","eighteen","십팔"},
-	STR_NINETEEN:						{"nineteen","diciannove","nineteen","dix-neuf","nineteen","nineteen","nineteen","nineteen","nineteen","nineteen","nineteen","nineteen","십구"},
-	STR_TWENTY:							{"twenty","venti","twenty","vingt","twenty","twenty","twenty","twenty","twenty","twenty","twenty","twenty","이십"},
-	STR_THIRTY:							{"thirty","trenta","thirty","trente","thirty","thirty","thirty","thirty","thirty","thirty","thirty","thirty","삼십"},
-	STR_FOURTY:							{"fourty","quaranta","fourty","quarante","fourty","fourty","fourty","fourty","fourty","fourty","fourty","fourty","사십"},
-	STR_FIFTY:							{"fifty","cinquanta","fifty","cinquante","fifty","fifty","fifty","fifty","fifty","fifty","fifty","fifty","오십"},
-	STR_SIXTY:							{"sixty","sessanta","sixty","soixante","sixty","sixty","sixty","sixty","sixty","sixty","sixty","sixty","육십"},
-	STR_SEVENTY:						{"seventy","settantta","seventy","soixante-dix","seventy","seventy","seventy","seventy","seventy","seventy","seventy","seventy","칠십"},
-	STR_EIGHTY:							{"eighty","ottanta","eighty","quatre-vingt","eighty","eighty","eighty","eighty","eighty","eighty","eighty","eighty","팔십"},
-	STR_NINETY:							{"ninety","novanta","ninety","quatre vingt dix","ninety","ninety","ninety","ninety","ninety","ninety","ninety","ninety","구십"},
-	STR_ONE_HUNDRED:					{"one hundred","cento","one hundred","cent","one hundred","one hundred","one hundred","one hundred","one hundred","one hundred","one hundred","one hundred","백"},
-	STR_ONE_HOUR:						{"one hour","un'ora","one hour","une heure","one hour","one hour","one hour","one hour","one hour","one hour","one hour","one hour","한 시간"},
-	STR_ONE_HOUR_ALT:					{"an hour","un ora","an hour","une heure","an hour","an hour","an hour","an hour","an hour","an hour","an hour","an hour","한 시간"},
-	STR_HOUR:							{"hour","ore","hour","heure","hour","hour","hour","hour","hour","hour","hour","hour","시간"},
-	STR_MINUTE:							{"minute","minuti","minute","minute","minute","minute","minute","minute","minute","minute","minute","minute","분"},
-	STR_SECOND:							{"second","secondi","second","seconde","second","second","second","second","second","second","second","second","초"},
+	STR_ZERO:                           {"zero", "zero", "zero", "zéro", "zero", "zero", "zero", "zero", "zero", "zero", "zero", "zero", "영"},
+	STR_ONE:                            {"one", "uno", "one", "un", "one", "one", "one", "one", "one", "one", "one", "one", "일"},
+	STR_TWO:                            {"two", "due", "two", "deux", "two", "two", "two", "two", "two", "two", "two", "two", "이"},
+	STR_THREE:                          {"three", "tre", "three", "trois", "three", "three", "three", "three", "three", "three", "three", "three", "삼"},
+	STR_FOUR:                           {"four", "quattro", "four", "quatre", "four", "four", "four", "four", "four", "four", "four", "four", "사"},
+	STR_FIVE:                           {"five", "cinque", "five", "cinq", "five", "five", "five", "five", "five", "five", "five", "five", "오"},
+	STR_SIX:                            {"six", "sei", "six", "six", "six", "six", "six", "six", "six", "six", "six", "six", "육"},
+	STR_SEVEN:                          {"seven", "sette", "seven", "sept", "seven", "seven", "seven", "seven", "seven", "seven", "seven", "seven", "칠"},
+	STR_EIGHT:                          {"eight", "otto", "eight", "huit", "eight", "eight", "eight", "eight", "eight", "eight", "eight", "eight", "팔"},
+	STR_NINE:                           {"nine", "nove", "nine", "neuf", "nine", "nine", "nine", "nine", "nine", "nine", "nine", "nine", "구"},
+	STR_TEN:                            {"ten", "dieci", "ten", "dix", "ten", "ten", "ten", "ten", "ten", "ten", "ten", "ten", "십"},
+	STR_ELEVEN:                         {"eleven", "undici", "eleven", "onze", "eleven", "eleven", "eleven", "eleven", "eleven", "eleven", "eleven", "eleven", "십일"},
+	STR_TWELVE:                         {"twelve", "dodici", "twelve", "douze", "twelve", "twelve", "twelve", "twelve", "twelve", "twelve", "twelve", "twelve", "십이"},
+	STR_THIRTEEN:                       {"thirteen", "tredici", "thirteen", "treize", "thirteen", "thirteen", "thirteen", "thirteen", "thirteen", "thirteen", "thirteen", "thirteen", "십삼"},
+	STR_FOURTEEN:                       {"fourteen", "quattordici", "fourteen", "quatorze", "fourteen", "fourteen", "fourteen", "fourteen", "fourteen", "fourteen", "fourteen", "fourteen", "십사"},
+	STR_FIFTEEN:                        {"fifteen", "quindici", "fifteen", "quinze", "fifteen", "fifteen", "fifteen", "fifteen", "fifteen", "fifteen", "fifteen", "fifteen", "십오"},
+	STR_SIXTEEN:                        {"sixteen", "sedici", "sixteen", "seize", "sixteen", "sixteen", "sixteen", "sixteen", "sixteen", "sixteen", "sixteen", "sixteen", "십육"},
+	STR_SEVENTEEN:                      {"seventeen", "diciassette", "seventeen", "dix-sept", "seventeen", "seventeen", "seventeen", "seventeen", "seventeen", "seventeen", "seventeen", "seventeen", "십칠"},
+	STR_EIGHTEEN:                       {"eighteen", "diciotto", "eighteen", "dix-huit", "eighteen", "eighteen", "eighteen", "eighteen", "eighteen", "eighteen", "eighteen", "eighteen", "십팔"},
+	STR_NINETEEN:                       {"nineteen", "diciannove", "nineteen", "dix-neuf", "nineteen", "nineteen", "nineteen", "nineteen", "nineteen", "nineteen", "nineteen", "nineteen", "십구"},
+	STR_TWENTY:                         {"twenty", "venti", "twenty", "vingt", "twenty", "twenty", "twenty", "twenty", "twenty", "twenty", "twenty", "twenty", "이십"},
+	STR_THIRTY:                         {"thirty", "trenta", "thirty", "trente", "thirty", "thirty", "thirty", "thirty", "thirty", "thirty", "thirty", "thirty", "삼십"},
+	STR_FOURTY:                         {"fourty", "quaranta", "fourty", "quarante", "fourty", "fourty", "fourty", "fourty", "fourty", "fourty", "fourty", "fourty", "사십"},
+	STR_FIFTY:                          {"fifty", "cinquanta", "fifty", "cinquante", "fifty", "fifty", "fifty", "fifty", "fifty", "fifty", "fifty", "fifty", "오십"},
+	STR_SIXTY:                          {"sixty", "sessanta", "sixty", "soixante", "sixty", "sixty", "sixty", "sixty", "sixty", "sixty", "sixty", "sixty", "육십"},
+	STR_SEVENTY:                        {"seventy", "settantta", "seventy", "soixante-dix", "seventy", "seventy", "seventy", "seventy", "seventy", "seventy", "seventy", "seventy", "칠십"},
+	STR_EIGHTY:                         {"eighty", "ottanta", "eighty", "quatre-vingt", "eighty", "eighty", "eighty", "eighty", "eighty", "eighty", "eighty", "eighty", "팔십"},
+	STR_NINETY:                         {"ninety", "novanta", "ninety", "quatre vingt dix", "ninety", "ninety", "ninety", "ninety", "ninety", "ninety", "ninety", "ninety", "구십"},
+	STR_ONE_HUNDRED:                    {"one hundred", "cento", "one hundred", "cent", "one hundred", "one hundred", "one hundred", "one hundred", "one hundred", "one hundred", "one hundred", "one hundred", "백"},
+	STR_ONE_HOUR:                       {"one hour", "un'ora", "one hour", "une heure", "one hour", "one hour", "one hour", "one hour", "one hour", "one hour", "one hour", "one hour", "한 시간"},
+	STR_ONE_HOUR_ALT:                   {"an hour", "un ora", "an hour", "une heure", "an hour", "an hour", "an hour", "an hour", "an hour", "an hour", "an hour", "an hour", "한 시간"},
+	STR_HOUR:                           {"hour", "ore", "hour", "heure", "hour", "hour", "hour", "hour", "hour", "hour", "hour", "hour", "시간"},
+	STR_MINUTE:                         {"minute", "minuti", "minute", "minute", "minute", "minute", "minute", "minute", "minute", "minute", "minute", "minute", "분"},
+	STR_SECOND:                         {"second", "secondi", "second", "seconde", "second", "second", "second", "second", "second", "second", "second", "second", "초"},
 }
 
 func GetText(key string) string {

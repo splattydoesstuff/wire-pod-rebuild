@@ -15,6 +15,11 @@
 		"requiresexact": false
 	},
 	{	
+		"name": "intent_name_victor_say", 
+		"keyphrases" : ["your name", "you're name", "you name", "who are", "who are you", "whats your name", "what's your name"],
+		"requiresexact": false
+	},
+	{	
 		"name": "intent_imperative_eyecolor",
 		"keyphrases" : ["eye color", "colo", "i call her", "i foller", "icolor", "ecce", "erior", "ichor", "agricola", "change", "oracular", "oracle", "set your eye color to"],
 		"requiresexact": false
@@ -26,7 +31,7 @@
 	},
 	{	
 		"name": "intent_explore_start", 
-		"keyphrases" : ["start", "plor", "owing", "tailoring", "oding", "oring", "pling", "start exploring"],
+		"keyphrases" : ["start", "plor", "owing", "tailoring", "oding", "oring", "pling", "start exploring", "explore"],
 		"requiresexact": false
 	},
 	{	
@@ -56,7 +61,7 @@
 	},
 		{	
 		"name": "intent_greeting_goodbye", 
-		"keyphrases" : ["good bye", "good by", "good buy", "goodbye" ],
+		"keyphrases" : ["good bye", "bye", "good by", "good buy", "goodbye" ],
 		"requiresexact": false
 	},
 	{	
@@ -71,12 +76,12 @@
 	},
 	{	
 		"name": "intent_amazon_signin", 
-		"keyphrases" : ["in intellect", "fine in electa", "in alex", "ing alex", "in an elect", "to alex", "in angelica", "up alexa", "sign in to alexa" ],
+		"keyphrases" : ["in intellect", "fine in electa", "in alex", "ing alex", "in an elect", "to alex", "in angelica", "up alexa", "sign in to alexa", "sign in" ],
 		"requiresexact": false
 	},
 	{	
-		"name": "intent_amazon_signin", 
-		"keyphrases" : ["in outlet", "i now of elea", "out alexa", "out of ale" ],
+		"name": "intent_amazon_signout", 
+		"keyphrases" : ["in outlet", "i now of elea", "out alexa", "out of ale", "sign out alexa", "sign out" ],
 		"requiresexact": false
 	},
 	{	
@@ -127,7 +132,7 @@
 	{	
 		"name": "intent_imperative_negative", 
 		"keyphrases" : ["no", "dont", "no thanks" ],
-		"requiresexact": true
+		"requiresexact": false
 	},
 	{	
 		"name": "intent_photo_take_extend", 
@@ -216,7 +221,7 @@
 	},
 	{	
 		"name": "intent_clock_time", 
-		"keyphrases" : ["time is it", "the time", "what time", "clock", "what time is it" ],
+		"keyphrases" : [ "what time is it", "time is it", "the time", "times", "what time", "clock" ],
 		"requiresexact": false
 	},
 	{	
@@ -271,7 +276,37 @@
 	},
 	{	
 		"name": "intent_play_keepaway",
-		"keyphrases": ["keepaway", "keep away", "play keepaway" ],
+		"keyphrases": ["keepaway", "keep away", "play keepaway", "play keep away" ],
 		"requiresexact": false
-	}
+	},
+	{	
+		"name": "intent_knowledge_response_date_igraph", 
+		"keyphrases" : ["date is it", "the date", "what date", "date", "what date is it", "day", "what day", "day is it", "the day" ],
+		"requiresexact": false
+	},
+        {       
+                "name": "intent_victor_reboot",
+                "keyphrases": ["reboot", "reboot time", "restart" ],
+                "requiresexact": false
+        },
+        {       
+                "name": "intent_victor_shutdown", 
+                "keyphrases" : ["turn off", "power off", "shutdown", "deactivate"],
+                "requiresexact": false
+        },
+        {       
+                "name": "intent_victor_shutdown_satisfied", 
+                "keyphrases" : ["I am satisfied with my care", "I'm satisfied with my care" ],
+                "requiresexact": false
+        },
+        {       
+                "name": "intent_thank_you", 
+                "keyphrases" : ["thanks", "thank you" ],
+                "requiresexact": false
+        },
+        {       
+                "name": "intent_play_cubedrive", 
+                "keyphrases" : ["play cube drive", "play cubedrive", "cubedrive", "cube drive" ],
+                "requiresexact": false
+        }
 ]
