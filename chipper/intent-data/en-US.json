@@ -284,29 +284,29 @@
 		"keyphrases" : ["date is it", "the date", "what date", "date", "what date is it", "day", "what day", "day is it", "the day" ],
 		"requiresexact": false
 	},
-        {       
-                "name": "intent_victor_reboot",
-                "keyphrases": ["reboot", "reboot time", "restart" ],
-                "requiresexact": false
-        },
-        {       
-                "name": "intent_victor_shutdown", 
-                "keyphrases" : ["turn off", "power off", "shutdown", "deactivate"],
-                "requiresexact": false
-        },
-        {       
-                "name": "intent_victor_shutdown_satisfied", 
-                "keyphrases" : ["I am satisfied with my care", "I'm satisfied with my care" ],
-                "requiresexact": false
-        },
-        {       
-                "name": "intent_thank_you", 
-                "keyphrases" : ["thanks", "thank you" ],
-                "requiresexact": false
-        },
-        {       
-                "name": "intent_play_cubedrive", 
-                "keyphrases" : ["play cube drive", "play cubedrive", "cubedrive", "cube drive" ],
-                "requiresexact": false
-        }
+	{       
+		"name": "intent_victor_reboot",
+		"keyphrases": ["reboot", "reboot time", "restart" ],
+		"requiresexact": false
+	},
+	{       
+		"name": "intent_victor_shutdown", 
+		"keyphrases" : ["turn off", "power off", "shutdown", "deactivate"],
+		"requiresexact": false
+	},
+	{       
+		"name": "intent_victor_shutdown_satisfied", 
+		"keyphrases" : ["I am satisfied with my care", "I'm satisfied with my care" ],
+		"requiresexact": false
+	},
+	{ 	    
+		"name": "intent_thank_you", 
+		"keyphrases" : ["thanks", "thank you" ],
+		"requiresexact": false
+	},
+	{       
+		"name": "intent_play_cubedrive", 
+		"keyphrases" : ["play cube drive", "play cubedrive", "cubedrive", "cube drive" ],
+		"requiresexact": false
+	}
 ]

@@ -319,7 +319,13 @@ function getCurrentSettings() {
         } else if (`${eyeColorS}` == 5) {
           eyeColorT = "Purple";
         } else if (`${eyeColorS}` == 6) {
-          eyeColorT = "Other Green";
+          eyeColorT = "Matrix";
+        } else if (`${eyeColorS}` == 7) {
+          eyeColorT = "Rainbow";
+        } else if (`${eyeColorS}` == 8) {
+          eyeColorT = "Xross Media Bar";
+        } else if (`${eyeColorS}` == 9) {
+          eyeColorT = "Mystery";
         } else {
           eyeColorT = "none";
         }
@@ -338,7 +344,13 @@ function getCurrentSettings() {
       } else if (`${eyeColorS}` == 5) {
         eyeColorT = "Purple";
       } else if (`${eyeColorS}` == 6) {
-        eyeColorT = "Other Green";
+        eyeColorT = "Matrix";
+      } else if (`${eyeColorS}` == 7) {
+        eyeColorT = "Rainbow";
+      } else if (`${eyeColorS}` == 8) {
+        eyeColorT = "Xross Media Bar";
+      } else if (`${eyeColorS}` == 9) {
+        eyeColorT = "Mystery";
       } else {
         eyeColorT = "none";
       }
