@@ -306,7 +306,7 @@
 	},
 	{       
 		"name": "intent_play_cubedrive", 
-		"keyphrases" : ["play cube drive", "play cubedrive", "cubedrive", "cube drive" ],
+		"keyphrases" : ["play cube drive", "play cubedrive", "cubedrive", "cube drive", "play cube thrive", "play qb drive", "they cube drive" ],
 		"requiresexact": false
 	}
 ]
